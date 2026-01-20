@@ -44,10 +44,10 @@ const StudentFeedback = () => {
 };
 
 
-  const handleLogout = () => {
-    localStorage.removeItem("student");
-    navigate("/studentlogin");
-  };
+  // const handleLogout = () => {
+  //   localStorage.removeItem("student");
+  //   navigate("/studentlogin");
+  // };
 
   return (
     <div className="student-page">
