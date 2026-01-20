@@ -1,3 +1,4 @@
+
 {
   "name": "client",
   "version": "0.1.0",
@@ -42,5 +43,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "eslintConfig": {
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "rules": {
+    "no-unused-vars": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/no-marquee": "off"
   }
+}
+
 }
