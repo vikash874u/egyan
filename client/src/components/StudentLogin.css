@@ -1,0 +1,152 @@
+/* BACKGROUND */
+.student-login-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN WRAPPER */
+.login-3d-wrapper {
+  display: flex;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  max-width: 900px;
+  width: 90%;
+}
+
+/* LEFT SIDE */
+.login-left {
+  flex: 1;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.student-cartoon {
+  width: 200px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.floating-book {
+  font-size: 60px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  opacity: 0.3;
+  animation: spin 8s linear infinite;
+}
+
+.login-left h2 {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.login-left p {
+  opacity: 0.9;
+}
+
+/* RIGHT CARD */
+.login-card-3d {
+  flex: 1;
+  background: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.login-icon {
+  font-size: 50px;
+  color: #4f46e5;
+}
+
+.login-card-3d h3 {
+  margin: 15px 0 25px;
+  font-weight: 700;
+}
+
+/* INPUTS */
+.login-card-3d input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+/* BUTTON */
+.login-btn-3d {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.5);
+  transition: transform 0.3s;
+}
+
+.login-btn-3d:hover {
+  transform: translateY(-3px);
+}
+
+/* BACK BUTTON */
+.back-btn {
+  margin-top: 15px;
+  background: transparent;
+  border: none;
+  color: #4f46e5;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ERROR */
+.error-msg {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+.login-footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 13px;
+}
+
+/* ANIMATIONS */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .login-3d-wrapper {
+    flex-direction: column;
+  }
+
+  .student-cartoon {
+    width: 150px;
+  }
+}

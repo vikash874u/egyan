@@ -1,0 +1,139 @@
+
+.portal-card {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: #b30000;
+  color: white;
+  border-radius: 50%;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -40px auto 10px auto;
+}
+
+.bg-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(0,0,0,0.05);
+  pointer-events: none;
+}
+
+.portal-btn {
+  background: #ffb300;
+  border: none;
+  padding: 10px 25px;
+  color: black;
+  border-radius: 25px;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.portal-btn:hover {
+  background: #ff8c00;
+}
+.portal-wrapper {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+}
+
+.portal-title p {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #6a6a6a;
+  margin-bottom: 5px;
+}
+
+.portal-title h2 {
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.portal-title h2 span {
+  color: #b30000;
+}
+
+.portal-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  padding: 60px 25px 35px 25px; /* TOP padding increased because icon overlaps */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.badge-icon {
+  width: 90px;
+  height: 45px; /* half height to make top half-circle */
+  background: #b30000;
+  border-radius: 0 0 90px 90px; /* makes only bottom side rounded */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+}
+
+
+
+.card-num {
+  position: absolute;
+  font-size: 120px;
+  font-weight: 800;
+  color: rgba(0,0,0,0.05);
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.portal-card p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #222;
+  line-height: 1.6;
+  min-height: 120px;
+}
+
+.portal-btn {
+  background: #ffb300;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  color: #000;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.portal-btn:hover {
+  background: #ff9800;
+}
+.portal-card {
+  position: relative;
+}
+

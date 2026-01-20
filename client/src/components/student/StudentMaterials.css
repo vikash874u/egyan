@@ -1,0 +1,68 @@
+/* Main container */
+.student-material-container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
+
+/* Heading */
+.student-material-container h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 18px;
+  border-bottom: 3px solid #2563eb;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* Loading & empty text */
+.material-loading,
+.no-material {
+  color: #6b7280;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+/* Table */
+.material-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Header */
+.material-table thead {
+  background: #2563eb;
+}
+
+.material-table thead th {
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Body */
+.material-table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.material-table tbody tr:hover {
+  background: #f1f5f9;
+}
+
+/* PDF link */
+.pdf-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pdf-link:hover {
+  text-decoration: underline;
+}

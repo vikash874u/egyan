@@ -1,0 +1,109 @@
+.student-dashboard {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(
+    to bottom,
+    #f4f7ff 0%,
+    #f4f7ff 70%,
+    #eef2ff 100%
+  );
+}
+
+.student-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  padding: 22px 26px;
+  border-radius: 18px;
+  margin-bottom: 35px;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.35);
+}
+
+
+.student-header h2 {
+  margin: 0;
+}
+
+.student-header p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.student-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.student-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.student-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 14px 32px rgba(13, 110, 253, 0.18);
+}
+
+.student-card .icon {
+  font-size: 36px;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.student-card h4 {
+  margin-bottom: 5px;
+}
+
+.student-card p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.student-card.logout {
+  background: #fff5f5;
+}
+
+.student-card.logout .icon {
+  color: #dc3545;
+}
+/* Statistics Section */
+.student-stats {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.stat-card {
+  background: linear-gradient(135deg, #ffffff, #f8f9ff);
+  border-radius: 16px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 30px;
+  color: #4f46e5;
+  font-weight: 700;
+}
+.student-footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  opacity: 0.85;
+}

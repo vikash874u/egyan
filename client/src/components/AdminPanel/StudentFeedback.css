@@ -1,0 +1,91 @@
+/* Page wrapper */
+.admin-feedback-page {
+  padding: 25px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+/* Heading */
+.admin-feedback-page h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #2563eb;
+  display: inline-block;
+}
+
+/* Card container */
+.admin-feedback-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Table */
+.admin-feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Table header */
+.admin-feedback-table thead {
+  background: #2563eb;
+}
+
+.admin-feedback-table thead th {
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Table body */
+.admin-feedback-table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.admin-feedback-table tbody tr:hover {
+  background: #f1f5f9;
+}
+
+/* Message column */
+.message-cell {
+  max-width: 260px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Type badge */
+.type-feedback {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.type-complaint {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Empty state */
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+  font-weight: 500;
+}

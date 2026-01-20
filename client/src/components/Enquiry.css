@@ -1,0 +1,167 @@
+/* BACKGROUND */
+.enquiry-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #312e81);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WRAPPER */
+.enquiry-wrapper {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+}
+
+/* LEFT */
+.enquiry-left {
+  flex: 1;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.enquiry-img {
+  width: 220px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.enquiry-left h2 {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.enquiry-left p {
+  opacity: 0.9;
+}
+
+.floating-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 60px;
+  opacity: 0.3;
+  animation: spin 10s linear infinite;
+}
+
+/* RIGHT FORM */
+.enquiry-card {
+  flex: 1;
+  background: #ffffff;
+  padding: 40px;
+}
+
+.enquiry-card h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #312e81;
+}
+
+/* INPUTS */
+.inputbox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.inputbox input,
+.inputbox select,
+.inputbox textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  color: #111;            /* 👈 TEXT COLOR FIX */
+  background: #fff;
+}
+
+.inputbox textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+/* LABEL */
+.inputbox label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 0 6px;
+  font-size: 13px;
+  color: #555;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* FLOATING EFFECT */
+.inputbox input:focus + label,
+.inputbox input:not(:placeholder-shown) + label,
+.inputbox textarea:focus + label,
+.inputbox textarea:not(:placeholder-shown) + label,
+.inputbox select:focus + label {
+  top: -6px;
+  font-size: 12px;
+  color: #4f46e5;
+}
+
+
+/* BUTTONS */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.5);
+  margin-top: 10px;
+}
+
+.back-btn {
+  margin-top: 12px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #4f46e5;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ANIMATIONS */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .enquiry-wrapper {
+    flex-direction: column;
+  }
+
+  .enquiry-img {
+    width: 160px;
+  }
+}

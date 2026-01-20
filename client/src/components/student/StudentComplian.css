@@ -1,0 +1,95 @@
+/* Page wrapper */
+.student-complain-container {
+  max-width: 720px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.student-complain-container h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #dc2626;
+  margin-bottom: 20px;
+}
+
+/* Success message */
+.student-complain-success {
+  background: #ecfdf5;
+  color: #065f46;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Labels */
+.student-complain-container label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Select & textarea */
+.student-complain-container select,
+.student-complain-container textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.student-complain-container select:focus,
+.student-complain-container textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Submit button */
+.student-complain-container button[type="submit"] {
+  margin-top: 18px;
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.student-complain-container button[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+/* Back button */
+.student-complain-back-btn {
+  margin-top: 15px;
+  background: #f1f5f9;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.student-complain-back-btn:hover {
+  background: #e5e7eb;
+}
+.student-complain-container select {
+  background-color: #f8fafc;
+  color: #1f2937;
+}
+
+.student-complain-container select option {
+  background-color: #f8fafc;
+  color: #1f2937;
+}
