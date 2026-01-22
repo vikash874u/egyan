@@ -24,6 +24,10 @@ mongoose.connect('mongodb+srv://vikashkumararrah12_db_user:aPcSlLyDpPdnA1ex@clus
 }).catch((err)=>{
     console.error(err)
 })
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
+
 // api calling
 app.use('/api/students',studentRoutes)
 app.use('/api/contact', contactRoutes);
