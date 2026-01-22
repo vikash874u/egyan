@@ -16,7 +16,7 @@ app.use(express.json());
 
 
 //Mongodb connection
-mongoose.connect('mongodb://localhost:27017/egyandb',{
+mongoose.connect('mongodb+srv://vikashkumararrah12_db_user:aPcSlLyDpPdnA1ex@cluster0.3migtfp.mongodb.net/egyandb',{
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(()=>{
