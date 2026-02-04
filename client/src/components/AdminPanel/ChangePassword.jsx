@@ -31,7 +31,7 @@ const ChangePassword = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/admins/change-password",
+        "https://egyan-server.onrender.com/admins/change-password",
         {
           adminId: admin.adminId, // ✅ SAME IDENTIFIER
           currentPassword: formData.currentPassword,

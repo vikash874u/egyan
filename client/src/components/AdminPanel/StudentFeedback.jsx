@@ -8,7 +8,7 @@ const StudentFeedback = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/student-feedback")
+      .get("https://egyan-server.onrender.com/api/student-feedback")
       .then((res) => {
         setData(res.data);
         setLoading(false);

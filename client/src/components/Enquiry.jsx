@@ -24,7 +24,7 @@ export default function Enquiry() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/contact/add",
+        "https://egyan-server.onrender.com/api/contact/add",
         formData
       );
       alert(res.data.message || "Enquiry submitted successfully!");

@@ -8,7 +8,7 @@ const StudentMaterials = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/materials/material")
+      .get("https://egyan-server.onrender.com/api/materials/material")
       .then((res) => {
         setMaterials(res.data);
         setLoading(false);

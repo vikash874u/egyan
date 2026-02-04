@@ -9,7 +9,7 @@ export default function Students() {
   const [editData, setEditData] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/students/all")
+    axios.get("https://egyan-server.onrender.com/api/students/all")
       .then((res) => setStudents(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -22,12 +22,12 @@ export default function Students() {
 
   const handleDelete = async (id) => {
     if (!window.confirm("Delete this student?")) return;
-    await axios.delete(`http://localhost:5000/api/students/delete/${id}`);
+    await axios.delete(`https://egyan-server.onrender.com/api/students/delete/${id}`);
     setStudents(students.filter((s) => s._id !== id));
   };
 
   const saveStudent = async () => {
-    await axios.put(`http://localhost:5000/api/students/update/${editData._id}`, editData);
+    await axios.put(`https://egyan-server.onrender.com/api/students/update/${editData._id}`, editData);
     alert("Student Updated ✅");
     setEditData(null);
     window.location.reload();

@@ -17,7 +17,7 @@ export default function AdminLogin() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/admins/adminlogin",
+        "https://egyan-server.onrender.com/api/admins/adminlogin",
         { adminId, password }
       );
 

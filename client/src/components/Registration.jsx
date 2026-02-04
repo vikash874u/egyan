@@ -27,7 +27,7 @@ export default function Registration() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/students/register",
+        "https://egyan-server.onrender.com/api/students/register",
         formData
       );
       alert(res.data.message);

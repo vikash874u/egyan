@@ -24,7 +24,7 @@ const StudentFeedback = () => {
   e.preventDefault();
 
   try {
-    await axios.post("http://localhost:5000/api/student-feedback", {
+    await axios.post("https://egyan-server.onrender.com/api/student-feedback", {
       rollNo: student.rollNo,
       name: student.name,
       program: student.program,

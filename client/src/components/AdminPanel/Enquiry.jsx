@@ -7,7 +7,7 @@ export default function Enquiry() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/contact/all")
+    axios.get("https://egyan-server.onrender.com/api/contact/all")
       .then((res) => setEnquiries(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -22,7 +22,7 @@ const handleDelete = async (id) => {
   if (!window.confirm("Are you sure you want to delete this enquiry?")) return;
 
   try {
-    await axios.delete(`http://localhost:5000/api/contact/delete/${id}`);
+    await axios.delete(`https://egyan-server.onrender.com/api/contact/delete/${id}`);
     setEnquiries(enquiries.filter((item) => item._id !== id));
   } catch (error) {
     console.log(error);

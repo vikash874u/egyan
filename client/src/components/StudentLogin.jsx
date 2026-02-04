@@ -22,7 +22,7 @@ const StudentLogin = () => {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/students/login", {
+      const res = await axios.post("https://egyan-server.onrender.com/api/students/login", {
         rollNo: formData.enrollment,
         password: formData.password,
       });

@@ -20,7 +20,7 @@ export default function StudyMaterial() {
     const data = new FormData();
     Object.keys(formData).forEach((key) => data.append(key, formData[key]));
 
-    await axios.post("http://localhost:5000/api/materials/material", data, {
+    await axios.post("https://egyan-server.onrender.com/api/materials/material", data, {
       headers: { "Content-Type": "multipart/form-data" },
     });
 

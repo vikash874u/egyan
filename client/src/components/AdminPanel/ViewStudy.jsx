@@ -16,7 +16,7 @@ function ViewStudy() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/materials/material");
+      const res = await axios.get("https://egyan-server.onrender.com/api/materials/material");
       setData(res.data);
     } catch (err) {
       console.log("Error fetching data:", err);
@@ -62,7 +62,7 @@ function ViewStudy() {
       });
 
       await axios.put(
-        `http://localhost:5000/api/materials/material/${id}`,
+        `https://egyan-server.onrender.com/api/materials/material/${id}`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
@@ -80,7 +80,7 @@ function ViewStudy() {
     if (!window.confirm("Are you sure you want to delete?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/materials/material/${id}`);
+      await axios.delete(`https://egyan-server.onrender.com/api/materials/material/${id}`);
       setData(data.filter((item) => item._id !== id));
     } catch (err) {
       console.log("Error deleting:", err);
@@ -136,7 +136,7 @@ function ViewStudy() {
 
                     <td>
                       <a
-                        href={`http://localhost:5000/uploads/${item.FileName}`}
+                        href={`https://egyan-server.onrender.com/uploads/${item.FileName}`}
                         target="_blank"
                         rel="noreferrer"
                         className="btn btn-edit"
